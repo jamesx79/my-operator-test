@@ -18,8 +18,8 @@ spec:
       serviceAccountName: my-operator
       containers:
         - name: operator
-          image: my-operator:latest
-          imagePullPolicy: IfNotPresent
+          image: my-operator:v1.0.0
+          imagePullPolicy: Always
           env:
             - name: PYTHONUNBUFFERED
               value: "1"

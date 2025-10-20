@@ -64,10 +64,10 @@ kubectl apply -f manifests/rbac.yaml
 
 3. Build and push the Docker image:
 ```bash
-docker build -t my-operator:latest .
+docker build -t my-operator:v1.0.0 .
 # If pushing to a registry:
-# docker tag my-operator:latest <your-registry>/my-operator:latest
-# docker push <your-registry>/my-operator:latest
+# docker tag my-operator:v1.0.0 <your-registry>/my-operator:v1.0.0
+# docker push <your-registry>/my-operator:v1.0.0
 ```
 
 4. Deploy the operator:

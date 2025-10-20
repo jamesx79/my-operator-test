@@ -9,7 +9,6 @@ import logging
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 
 @kopf.on.create('example.com', 'v1', 'myresources')
